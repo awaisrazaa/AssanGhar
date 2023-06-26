@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:onboard_animation/Utils/app_colors.dart';
 
 class LandingContent extends StatelessWidget {
   const LandingContent({Key? key}) : super(key: key);
@@ -11,9 +12,10 @@ class LandingContent extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
-            "Find local community events",
+           Text(
+            "Find Your verified Home",
             style: TextStyle(
+              color: AppColors.appgreen,
               fontWeight: FontWeight.bold,
               fontSize: 42,
             ),
@@ -22,8 +24,8 @@ class LandingContent extends StatelessWidget {
             height: 16,
           ),
           Text(
-            "Get involved with what's happening near you.",
-            style: TextStyle(fontSize: 24, color: Colors.blueGrey.shade300),
+            "Apka apna ASSAN Ghar.",
+            style: TextStyle(fontSize: 24, color: AppColors.litegreen),
           )
         ],
       ),

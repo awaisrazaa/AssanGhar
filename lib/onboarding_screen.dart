@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:onboard_animation/components/onboard_content.dart';
 
+import 'Utils/app_colors.dart';
+
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
 
@@ -13,7 +15,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration.zero, () {
+    Future.delayed(Duration(seconds: 2), () {
       showModalBottomSheet(
         context: context,
         isScrollControlled: true,
@@ -32,12 +34,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        systemOverlayStyle: SystemUiOverlayStyle.light,
-      ),
       body: Image.asset(
-        "assets/bg.png",
+        "assets/ghar.jpeg",
         width: double.infinity,
         fit: BoxFit.cover,
       ),

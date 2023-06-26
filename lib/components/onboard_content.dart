@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:onboard_animation/Utils/app_colors.dart';
+import 'package:onboard_animation/components/Dashboard.dart';
 import 'package:onboard_animation/components/landed_content.dart';
 import 'package:onboard_animation/components/sing_up_form.dart';
 
@@ -37,7 +39,7 @@ class _OnboardContentState extends State<OnboardContent> {
               Expanded(
                 child: PageView(
                   controller: _pageController,
-                  children: const [
+                  children:  [
                     LandingContent(),
                     SignUpForm(),
                   ],
@@ -61,15 +63,16 @@ class _OnboardContentState extends State<OnboardContent> {
                 padding: const EdgeInsets.symmetric(horizontal: 24),
                 decoration: const BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(25)),
-                  gradient: LinearGradient(
-                    begin: Alignment.bottomLeft,
-                    end: Alignment.topRight,
-                    stops: [0.4, 0.8],
-                    colors: [
-                      Color.fromARGB(255, 239, 104, 80),
-                      Color.fromARGB(255, 139, 33, 146)
-                    ],
-                  ),
+                  // color: Colors.green
+                  // gradient: LinearGradient(
+                  //   begin: Alignment.bottomLeft,
+                  //   end: Alignment.topRight,
+                  //   stops: [0.4, 0.8],
+                  //   colors: [
+                  //     Color.fromARGB(124,252,0,9),
+                  //     Color.fromARGB(255, 139, 33, 146)
+                  //   ],
+                  // ),
                 ),
                 child: DefaultTextStyle(
                   style: const TextStyle(
@@ -79,32 +82,24 @@ class _OnboardContentState extends State<OnboardContent> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SizedBox(
-                        width: 92 + progress * 32,
-                        child: Stack(
-                          fit: StackFit.passthrough,
-                          children: [
-                            Opacity(
-                              opacity: 1 - progress,
-                              child: const Text("Get Started"),
-                            ),
-                            Opacity(
-                              opacity: progress,
-                              child: const Text(
-                                "Create account",
-                                maxLines: 1,
-                                overflow: TextOverflow.fade,
-                                softWrap: false,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      const Icon(
-                        Icons.chevron_right,
-                        size: 24,
-                        color: Colors.white,
-                      )
+                      // SizedBox(
+                      //   width: 92 + progress * 32,
+                      //   child: Stack(
+                      //     fit: StackFit.passthrough,
+                      //     children: [
+                      //       Opacity(
+                      //         opacity: 1 - progress,
+                      //         child: const Text("Get Started"),
+                      //       ),
+                      //
+                      //     ],
+                      //   ),
+                      // ),
+                      // const Icon(
+                      //   Icons.chevron_right,
+                      //   size: 24,
+                      //   color: Colors.white,
+                      // )
                     ],
                   ),
                 ),

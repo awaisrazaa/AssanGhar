@@ -34,10 +34,37 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  flutter_rating_stars: ^1.0.3+4
+  firebase_core: ^2.11.0
+  firebase_auth: ^4.5.0
+  flutter_spinkit: ^5.1.0
+  get:
+  permission_handler: ^10.2.0
+  image_picker: ^0.8.6
+  cloud_firestore: ^4.0.3
+  firebase_messaging: ^14.0.3
+  firebase_storage: ^11.0.3
+  optimized_cached_image: ^3.0.1
+  dropdown_button2: ^1.8.5
+  fluttertoast: ^8.2.1
+  flutter_animated_dialog: ^2.0.1
+  url_launcher: ^6.1.11
+  get_storage: ^2.0.3
+  flutter_sms: ^2.3.3
+  flutter_screenutil: ^5.6.0
+  carousel_slider: ^4.2.1
+  http: ^0.13.3
+  lottie: ^1.1.0
+  flutter_pdfview: ^1.0.0
+  easy_pdf_viewer: ^1.0.6
+
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -45,6 +72,14 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+  flutter_launcher_icons: "^0.11.0"
+
+
+flutter_icons:
+    android: "launcher_icon"
+    ios: true
+    image_path: "assets/apploggo.png"
+    min_sdk_android: 21
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -58,8 +93,9 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/bg.png
-  #   - images/a_dot_ham.jpeg
+    - assets/
+    - assets/99274-loading.json
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
