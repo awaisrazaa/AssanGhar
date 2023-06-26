@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "133610598443",
+    "project_id": "assan-ghar",
+    "storage_bucket": "assan-ghar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133610598443:android:fda1a2e683c1d50e31ba6e",
+        "android_client_info": {
+          "package_name": "com.example.onboard_animation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133610598443-n1ncbau7tuorelbhq9471n6s2p2oi3r8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI8m0ooPeaWrnsuLGThS-yDZw0qw5_b-o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133610598443-n1ncbau7tuorelbhq9471n6s2p2oi3r8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "133610598443-1evsuuacrpsoscdaacfm7aj095vvu067.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.onboardAnimation"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
